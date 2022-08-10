@@ -79,6 +79,7 @@ class BrandView extends StatelessWidget {
               }),
         ):
         GridView.builder(
+          shrinkWrap:true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
             childAspectRatio: (1/1.3),
@@ -92,7 +93,7 @@ class BrandView extends StatelessWidget {
               : brandProvider.brandList.length
               : brandProvider.brandList.length
               : 8,
-          shrinkWrap: true,
+
           physics: isHomePage ? NeverScrollableScrollPhysics() : BouncingScrollPhysics(),
           itemBuilder: (BuildContext context, int index) {
 
