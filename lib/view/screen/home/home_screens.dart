@@ -59,13 +59,13 @@ class _HomePageState extends State<HomePage> {
      Provider.of<BannerProvider>(context, listen: false).getMainSectionBanner(context);
      Provider.of<CategoryProvider>(context, listen: false).getCategoryList(reload, context);
      Provider.of<HomeCategoryProductProvider>(context, listen: false).getHomeCategoryProductList(reload, context);
-     Provider.of<TopSellerProvider>(context, listen: false).getTopSellerList(reload, context);
+    // Provider.of<TopSellerProvider>(context, listen: false).getTopSellerList(reload, context);
      Provider.of<BrandProvider>(context, listen: false).getBrandList(reload, context);
      Provider.of<ProductProvider>(context, listen: false).getLatestProductList(1, context, reload: reload);
      Provider.of<ProductProvider>(context, listen: false).getFeaturedProductList('1', context, reload: reload);
      Provider.of<FeaturedDealProvider>(context, listen: false).getFeaturedDealList(reload, context);
      Provider.of<ProductProvider>(context, listen: false).getLProductList('1', context, reload: reload);
-     Provider.of<ProductProvider>(context, listen: false).getRecommendedProduct(context);
+    // Provider.of<ProductProvider>(context, listen: false).getRecommendedProduct(context);
   }
 
   void passData(int index, String title) {
@@ -255,15 +255,15 @@ class _HomePageState extends State<HomePage> {
 
 
                           //top seller
-                          singleVendor?SizedBox():
-                          TitleRow(title: getTranslated('top_seller', context),
-                            onTap: () {Navigator.push(context, MaterialPageRoute(builder: (_) => AllTopSellerScreen(topSeller: null,)));},),
-                          singleVendor?SizedBox(height: 0):SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
-                          singleVendor?SizedBox():
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
-                            child: TopSellerView(isHomePage: true),
-                          ),
+                          // singleVendor?SizedBox():
+                          // TitleRow(title: getTranslated('top_seller', context),
+                          //   onTap: () {Navigator.push(context, MaterialPageRoute(builder: (_) => AllTopSellerScreen(topSeller: null,)));},),
+                          // singleVendor?SizedBox(height: 0):SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
+                          // singleVendor?SizedBox():
+                          // Padding(
+                          //   padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
+                          //   child: TopSellerView(isHomePage: true),
+                          // ),
 
 
 
@@ -333,10 +333,10 @@ class _HomePageState extends State<HomePage> {
 
 
 
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
-                            child: RecommendedProductView(),
-                          ),
+                          // Padding(
+                          //   padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
+                          //   child: RecommendedProductView(),
+                          // ),
 
 
 
