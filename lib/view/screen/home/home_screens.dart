@@ -256,14 +256,14 @@ class _HomePageState extends State<HomePage> {
 
                           //top seller
                           singleVendor?SizedBox():
-                          TitleRow(title: getTranslated('top_seller', context),
-                            onTap: () {Navigator.push(context, MaterialPageRoute(builder: (_) => AllTopSellerScreen(topSeller: null,)));},),
-                          singleVendor?SizedBox(height: 0):SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
-                          singleVendor?SizedBox():
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
-                            child: TopSellerView(isHomePage: true),
-                          ),
+                          // TitleRow(title: getTranslated('top_seller', context),
+                          //   onTap: () {Navigator.push(context, MaterialPageRoute(builder: (_) => AllTopSellerScreen(topSeller: null,)));},),
+                          // singleVendor?SizedBox(height: 0):SizedBox(height: Dimensions.PADDING_SIZE_SMALL),
+                          // singleVendor?SizedBox():
+                          // Padding(
+                          //   padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
+                          //   child: TopSellerView(isHomePage: true),
+                          // ),
 
 
 
@@ -333,10 +333,10 @@ class _HomePageState extends State<HomePage> {
 
 
 
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
-                            child: RecommendedProductView(),
-                          ),
+                          // Padding(
+                          //   padding: const EdgeInsets.only(bottom: Dimensions.HOME_PAGE_PADDING),
+                          //   child: RecommendedProductView(),
+                          // ),
 
 
 
