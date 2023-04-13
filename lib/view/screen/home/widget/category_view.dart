@@ -19,7 +19,7 @@ class CategoryView extends StatelessWidget {
         GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
-            crossAxisSpacing: 15,
+            crossAxisSpacing: 10,
             mainAxisSpacing: 5,
             childAspectRatio: (1/1.3),
           ),

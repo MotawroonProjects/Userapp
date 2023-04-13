@@ -38,7 +38,7 @@ class LatestProductView extends StatelessWidget {
 
           !prodProvider.firstLoading ? productList.length != 0 ?
           Container(
-            height: MediaQuery.of(context).size.width/1.45,
+             height: MediaQuery.of(context).size.width/1.40,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: productList.length,

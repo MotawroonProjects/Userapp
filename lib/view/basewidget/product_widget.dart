@@ -26,7 +26,7 @@ class ProductWidget extends StatelessWidget {
         ));
       },
       child: Container(
-        height: MediaQuery.of(context).size.width/1.5,
+        // height: MediaQuery.of(context).size.width/1.5,
         margin: EdgeInsets.all(5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
@@ -37,7 +37,7 @@ class ProductWidget extends StatelessWidget {
           Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             // Product Image
             Container(
-              height: MediaQuery.of(context).size.width/2.45,
+            //  height: MediaQuery.of(context).size.width/2.45,
               decoration: BoxDecoration(
                 color: ColorResources.getIconBg(context),
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10)),
