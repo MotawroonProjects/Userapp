@@ -69,15 +69,17 @@ dependency_overrides:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.9.0
+  flutter_launcher_icons: ^0.10.0
   flutter_native_splash: ^1.1.8+4
   import_sorter: ^4.6.0
 
   # flutter pub run flutter_launcher_icons:
 flutter_icons:
-  image_path: "assets/images/app_icon.jpeg"
+  remove_alpha_ios: true
   android: true
   ios: true
+  image_path: "assets/images/app_icon.jpeg"
+
 
 flutter:
   uses-material-design: true
